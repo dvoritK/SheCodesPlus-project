@@ -1,0 +1,75 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-family: "Walter Turncoat", cursive;
+  font-weight: 600;
+}
+.container {
+  border: 1mm solid rgb(174, 204, 202);
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px rgb(231, 225, 225);
+  opacity: 0.7;
+  background: rgb(240, 248, 248);
+  max-width: 70%;
+}
+form {
+  margin-top: 50px;
+}
+#current-button {
+  position: relative;
+  top: -31px;
+  left: 155px;
+  background: rgb(174, 204, 202);
+  border: 0.2mm solid rgb(31, 138, 129);
+  border-radius: 3px;
+  padding: 3px 3px;
+  transition: all 0.2s ease-out;
+}
+#current-button:hover {
+  background: rgb(240, 248, 248);
+}
+h1 {
+  color: rgb(239, 252, 251);
+  margin: 30px;
+  text-transform: capitalize;
+}
+.city {
+  border: 0.1em solid rgb(31, 138, 129);
+  border-radius: 30px;
+  background: rgb(31, 138, 129);
+  padding: 10px 5px;
+}
+li {
+  list-style: none;
+  padding-bottom: 0;
+}
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+  color: rgb(31, 138, 129);
+}
+#celsius-link:hover,
+#fahrenheit-link:hover {
+  text-decoration: underline;
+}
+.current-date {
+  padding-bottom: 5px;
+}
+
+#current-temperature {
+  font-size: 30px;
+  font-weight: 800;
+}
+.partly-cloudy-icon {
+  display: block;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: rgb(134, 138, 139);
+}
+.card {
+  margin-bottom: 50px;
+  background: rgb(228, 248, 191);
+  border: 1mm solid rgb(203, 218, 175);
+}
