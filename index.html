@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/d23ca1b3f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Walter+Turncoat&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+<title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-city-form">
+        <input type="text" id="enter-city" placeholder="Enter city" />
+        <input type="submit" value="Search" />
+      </form>
+      <button id="current-button">current</button>
+      <h1 class="city">Tel Aviv</h1>
+      <ul>
+        <li class="current-date"></li>
+        <li  id="weather-description"></li>
+         </ul>
+         <ul>
+           <p>
+       <span id="current-temperature">22 </span>
+       <a href="#" id="celsius-link">°C</a>  |
+        <a href="#" id="fahrenheit-link">°F</a>
+           </p>
+
+     
+      <i class="fa-solid fa-cloud-sun partly-cloudy-icon"></i>
+      <div class="row">
+        <div class="col-2">
+          <div class="card tomorrow">
+            <div class="card-body">
+              <ul>
+                <li class="day">Wed</li>
+                <li class="temperature">15°</li>
+                <li class="emoji">🌤️</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card in-two-days">
+            <div class="card-body">
+              <ul>
+                <li class="day">Thu</li>
+                <li class="temperature">11°</li>
+                <li class="emoji">🌧️</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card in-three-days">
+            <div class="card-body">
+              <ul>
+                <li class="day">Fri</li>
+                <li class="temperature">12°</li>
+                <li class="emoji">🌤️</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card in-four-days">
+            <div class="card-body">
+              <ul>
+                <li class="day">Sat</li>
+                <li class="temperature">18°</li>
+                <li class="emoji">☀️</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card in-five-days">
+            <div class="card-body">
+              <ul>
+                <li class="day">Sun</li>
+                <li class="temperature">10°</li>
+                <li class="emoji">⛈️</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-2">
+          <div class="card in-six-days">
+            <div class="card-body">
+              <ul>
+                <li class="day">Mon</li>
+                <li class="temperature">8°</li>
+                <li class="emoji">⛈️</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
