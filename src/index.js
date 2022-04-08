@@ -1,4 +1,5 @@
-function displayDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let days = [
     `Sunday`,
     `Monday`,
@@ -17,16 +18,19 @@ function displayDate(date) {
   if (minute < 10) {
     minute = `0${minute}`;
   }
+
   return `${day} , ${hour} : ${minute}`;
 }
 
 function displayWeather(response) {
-  document.querySelector("#current-temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].description;
-  document.querySelector(".city").innerHTML = response.data.name;
+  let temperatureElement = document.querySelector("#current-temperature");
+  let cityElement = document.querySelector(".city");
+  let descriptionElement = document.querySelector("#weather-description");
+  let dateElement = document.querySelector(".current-date");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function searchCity(city) {
@@ -40,12 +44,6 @@ function handleSubmit(event) {
   let city = document.querySelector("#enter-city").value;
   searchCity(city);
 }
-
-let dateElement = document.querySelector(".current-date");
-let currentTime = new Date();
-dateElement.innerHTML = displayDate(currentTime);
-let searchCityForm = document.querySelector("#search-city-form");
-searchCityForm.addEventListener("submit", handleSubmit);
 
 function searchCurrentLocation(position) {
   let apiKey = "bea4f3a13d9c626697f2497a1cfb384d";
@@ -61,6 +59,9 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
+
 let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", getCurrentLocation);
 searchCity("Tel-Aviv");
+let searchCityForm = document.querySelector("#search-city-form");
+searchCityForm.addEventListener("submit", handleSubmit);
