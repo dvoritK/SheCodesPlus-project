@@ -21,24 +21,41 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-city-form">
-        <input type="text" id="enter-city" placeholder="Enter city" />
-        <input type="submit" value="Search" />
+      <div class="weather-app">
+      
+      <form  id="search-city-form">
+       
+           <input type="text" id="enter-city" placeholder="Enter city" /> 
+        
+       
+          <input type="submit" value="Search" />
+       
       </form>
-      <button id="current-button">current</button>
+    <button id="current-button"> current</button>
+      
       <h1 class="city">Tel Aviv</h1>
       <ul>
         <li class="current-date"></li>
-        <li  id="weather-description"></li>
-         </ul>
-         <ul>
-           <p>
-       <span id="current-temperature">22 </span>
+        <li id="weather-description"></li>
+        </ul>
+        <div class="row">
+        <div class="col-6">
+          <div class="clearfix"></div>
+        <img src="" alt="" id="icon" />
+     
+         <span id="current-temperature">22</span> 
        <a href="#" id="celsius-link">°C</a>  |
         <a href="#" id="fahrenheit-link">°F</a>
-           </p>
+      </div>
+      
 
-      <img src="" alt="" id="icon" /></i>
+        <div class="col-6">
+          <ul>
+        <li>humidity: <span id="humidity"></span>%</li>
+        <li>wind speed: <span id="wind"></span> km</li>
+        </ul>
+        </div>
+        </div>
       <div class="row">
         <div class="col-2">
           <div class="card tomorrow">
@@ -110,7 +127,8 @@
       </div>
       <script src="src/index.js"></script>
     </div>
-    <p>
-    <a href="https://github.com/dvoritK/Weather-App.git" target="_blank" ><small>open-source code</a> by </small>Dvorit Karpf-Cogan</p>
+    </div>
+ 
+    <a href="https://github.com/dvoritK/Weather-App.git" target="_blank" ><small>open-source code</a> by Dvorit Karpf-Cogan</small>
   </body>
 </html>
