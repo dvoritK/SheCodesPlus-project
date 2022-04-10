@@ -86,6 +86,32 @@ function convertToCelsius(event) {
   fahrenheitLink.classList.remove("active");
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Friday", "Saterday"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+          <div class= "weather-forecast-date">
+          ${day}
+          </div>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="45"/>
+          <div class="weather-forecast-temperature">
+            <span class="weather-forcast-max-temperature">
+          18 </span>
+          <span class="weather-forecast-min-temperature">
+           12 </span>
+          </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
 let celsiusTemperature = null;
 
 let currentButton = document.querySelector("#current-button");

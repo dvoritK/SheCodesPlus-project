@@ -75,8 +75,6 @@ li {
 }
 .weather-forecast {
   margin-top: 20px;
-  background: rgb(228, 248, 191);
-  border: 1mm solid rgb(203, 218, 175);
   text-align: center;
 }
 .weather-forecast-date {
