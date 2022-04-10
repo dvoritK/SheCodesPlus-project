@@ -73,9 +73,18 @@ li {
   font-size: 30px;
   font-weight: 800;
 }
-
-.card {
-  margin-bottom: 50px;
+.weather-forecast {
+  margin-top: 20px;
   background: rgb(228, 248, 191);
   border: 1mm solid rgb(203, 218, 175);
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+.weather-forecast-min-temperature {
+  opacity: 0.6;
 }
