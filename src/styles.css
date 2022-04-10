@@ -50,21 +50,6 @@ li {
   opacity: 0.7;
 }
 
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
-}
-#celsius-link {
-  color: #212529;
-}
-#fahrenheit-link {
-  color: rgb(31, 138, 129);
-}
-
-#celsius-link:hover,
-#fahrenheit-link:hover {
-  text-decoration: underline;
-}
 .current-date {
   padding-bottom: 5px;
 }
