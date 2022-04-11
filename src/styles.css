@@ -32,6 +32,7 @@ button {
 }
 #current-button:hover {
   background: rgb(240, 248, 248);
+  cursor: pointer;
 }
 h1 {
   color: rgb(239, 252, 251);
@@ -78,6 +79,7 @@ li {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.7;
+  color: rgb(21, 101, 94);
 }
 .weather-forecast-temperature {
   font-size: 13px;
@@ -87,5 +89,5 @@ li {
 }
 #github-link,
 #netlify-link {
-  color: rgb(52, 50, 50);
+  color: rgb(21, 101, 94);
 }
